@@ -96,23 +96,72 @@ footer {
   background: #38bdf8;
 
 }
+.nan{
+  background-color: black;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-direction: column;
+  display: none;
+  }
+  span{
+      height: 3px;
+      width: 25px;
+      background-color: white;
+     
+  }
+  
+  @media(max-width:800px){
+
+  .navList{
+    position: absolute;
+    top: 80px;
+    right: 0px;
+
+    background: #020617;
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .nan{
+    display: flex;
+  }
+}
+
 </style>
 
   
   <header>
     <h1>PORTIFOLIO</h1>
-    <nav>
+    <nav class="navList hidden">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
+    <div class="nan">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </header>
 
  
   <section class="identity">
   <img src="/Kingsman.png" alt="My Photo" class="img">
 
-  <h2>Hello, I'm <span>Mpano David</span></h2>
+  <h2>Hello, I'm Mpano David</h2>
   <p>A student in Intango TSS and a player for Apr FA.</p>
   </section>
 
@@ -158,6 +207,6 @@ footer {
     <footer>
         <p>&copy; 2026 Mpano David.</p>
     </footer> 
-
+<script src="/script.js"></script>
 </body>
 </html>
